@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Exercise</title>
+</head>
+
+<body>
+
+    <script>
+        var arr = [10.2, 2.3, 11.6, 4.7, 15.1, 6.8, 3.5];
+
+        var transformArr = arr.map(function (num) {
+            return Math.round(num);
+        });
+
+        var descendingArr = transformArr.slice().sort(function (a, b) {
+            return b - a;
+        });
+
+        document.write("<p>Transform array is " + transformArr.join(",") + "</p>");
+        document.write("<p>Descending order of array is " + descendingArr.join(",") + "</p>");
+    </script>
+
+</body>
+
+</html>

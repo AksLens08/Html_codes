@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document getElementsByTagName Method Example</title>
+    </head>
+    <body>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <script type="text/javascript">
+            function totalElements() {
+                var all = document.getElementsByTagName("p").length;
+                alert("Total Paragraphs: " + all);
+            }
+        </script>
+        <form>
+            <input type="button" value="Total Paragraphs" onclick="totalElements()"/>
+        </form>
+    </body>
+</html>

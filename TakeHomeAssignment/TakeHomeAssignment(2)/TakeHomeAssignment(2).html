@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academic Report Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 40px;
+            background-color: #ffffff;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 3px;
+            background-color: #8a5a62; 
+            width: 700px;
+            margin: 0 auto;
+        }
+        th, td {
+            background-color: #fbc6cf; 
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+            color: #000000;
+        }
+        th {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+        }
+        .heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .row-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .bar-container {
+            width: 120px;
+            height: 18px;
+            background-color: #e2e2e2;
+            border: 1px solid #999;
+            border-radius: 10px;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+        .fill {
+            height: 100%;
+            border-radius: 10px;
+        }
+        .green { background-color: #00a859; }
+        .blue  { background-color: #0055ff; }
+
+        .wide-bar {
+            width: 240px;
+            margin-top: 5px;
+        }
+
+        .center-text {
+            font-size: 17px;
+            font-weight: bold;
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Reports</th>
+            <th>Progress Bar</th>
+        </tr>
+        
+        <tr>
+            <td rowspan="2" style="width: 50%;">
+                <div class="heading">CSE & ECE Report</div>
+                <div class="row-item">
+                    <div class="bar-container"><div class="fill green" style="width: 100%;"></div></div>
+                    <span>124 Total Students</span>
+                </div>
+                <div class="row-item">
+                    <div class="bar-container"><div class="fill green" style="width: 52%;"></div></div>
+                    <span>64 CSE Students</span>
+                </div>
+                <div class="row-item">
+                    <div class="bar-container"><div class="fill green" style="width: 48%;"></div></div>
+                    <span>60 ECE Students</span>
+                </div>
+            </td>
+            <td style="width: 50%;">
+                <div class="heading">Teaching Progress Bar</div>
+                <div class="bar-container wide-bar"><div class="fill blue" style="width: 15%;"></div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="center-text">Total Lecturer Times - 48 Times</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">
+                <div class="heading">Gender Report</div>
+                <div class="row-item">
+                    <div class="bar-container"><div class="fill green" style="width: 100%;"></div></div>
+                    <span>64 Total Students</span>
+                </div>
+                <div class="row-item">
+                    <div class="bar-container"><div class="fill green" style="width: 53%;"></div></div>
+                    <span>34 Girl Students</span>
+                </div>
+                <div class="row-item">
+                    <div class="bar-container"><div class="fill green" style="width: 47%;"></div></div>
+                    <span>30 Boy Students</span>
+                </div>
+            </td>
+            <td>
+                <div class="heading">Homework Progress Bar</div>
+                <div class="bar-container wide-bar"><div class="fill blue" style="width: 40%;"></div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="center-text">Homework & Practice Exercise</div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

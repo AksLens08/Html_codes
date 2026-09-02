@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Get Elements By Name</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function totalElements() {
+                var all = document.getElementsByName("gender").length;
+                alert("Total Gender: " + all);
+            }
+        </script>
+        <form>
+            Male <input type="radio" name="gender" value="Male"/><br/>
+            Female <input type="radio" name="gender" value="Female"/><br/><br/>
+            <input type="button" value="Total Gender" onclick="totalElements()"/>
+        </form>
+    </body>
+</html>

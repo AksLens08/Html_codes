@@ -1,0 +1,9 @@
+h1{ border:6px; 
+    border-top-style: solid; 
+    border-bottom-style: dotted; 
+    border-left-style: dashed; 
+    border-right-style: double;}
+h2{border:12px red groove;}
+p{border:12px blue ridge;}
+p1{border:12px yellow inset;}
+p2{border:12px yellow outset;}

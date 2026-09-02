@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date and Object Exercise</title>
+        <script type="text/javascript">
+            function DisplayTime(currentDate) {
+                var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var hours = currentDate.getHours();
+                var minutes = currentDate.getMinutes();
+                var period = hours >= 12 ? "PM" : "AM";
+
+                hours = hours % 12;
+                hours = hours === 0 ? 12 : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+
+                var output = "Current Date and Time\n";
+                output += weekdays[currentDate.getDay()] + " ";
+                output += currentDate.getDate() + " ";
+                output += months[currentDate.getMonth()] + " ";
+                output += currentDate.getFullYear() + "\n";
+                output += hours + ":" + minutes + " " + period;
+
+                alert(output);
+            }
+
+            DisplayTime(new Date());
+        </script>
+    </head>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Lifetime Supply Calculator</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    var snack = prompt("Enter your favorite snack:");
+    var currentAge = parseInt(prompt("Enter your current age:"));
+    var maximumAge = parseInt(prompt("Enter your maximum age:"));
+    var amountPerDay = parseInt(prompt("How many do you eat per day?"));
+
+    var total = (maximumAge - currentAge) * 365 * amountPerDay;
+
+    var result = "You will need " + total + " " + snack + "(s) to last you until the ripe old age of " + maximumAge + ".";
+
+    window.alert(result);
+
+    document.write(result);
+</script>
+
+</body>
+</html>

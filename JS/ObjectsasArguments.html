@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects As Arguments</title>
+        <script type="text/javascript">
+            var ShweWarCat = {name:"Shwe War", age: 8, furColor: "grey", likes: ["fish","milk"], birthday: {"month" : 7, "day" : 22, year : 2018}}
+            function describeCat(cat)
+            {
+                document.write("My cat name is " + cat.name+ " and "+ cat.age + " years old with "+ cat.furColor + " fur.<br><br> ");
+                document.write(cat.name+ " likes " +cat.likes.join(" and "));
+                document.write("<br><br>Birthday of "+cat.name+ " is " +cat.birthday.day+ " . " +cat.birthday.month+ " . " + cat.birthday.year);
+            }
+            describeCat(ShweWarCat);
+       </script>
+    </head>
+    <body>
+
+    </body>
+</html>

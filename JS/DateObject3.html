@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript date </title>
+    <script type="text/javascript">
+        var today = new Date();
+        document.write("Today is " + today.toDateString());
+        document.write("<br>Today is " + today.toTimeString());
+        today.setMonth(10);
+        document.write("<br>Set month and day is "+ today.toDateString());
+        today.setDate(12);
+        document.write("<br>Set date is "+ today.toDateString());
+        today.setFullYear(2027);
+        document.write("<br>Set year is "+ today.toDateString());
+    </script>
+</head>
+</html>

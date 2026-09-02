@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>InnerHTML Property Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function showCommentForm() {
+                var data = "Name:<br><input type='text' name='name'><br>";
+                data += "Comment:<br><textarea rows='5' cols='50'></textarea><br>";
+                data += "<input type='submit' value='comment'>";
+                document.getElementById("mylocation").innerHTML = data;
+            }
+        </script>
+        <form name="myForm">
+            <input type="button" value="Comment" onclick="showCommentForm()">
+            <div id="mylocation"></div>
+        </form>
+    </body>
+</html>

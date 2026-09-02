@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document Get Element By ID Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function getNumbers() {
+                return [
+                    Number(document.getElementById("Number1").value),
+                    Number(document.getElementById("Number2").value),
+                    Number(document.getElementById("Number3").value)
+                ];
+            }
+
+            function getSum() {
+                var numbers = getNumbers();
+                alert(numbers[0] + numbers[1] + numbers[2]);
+            }
+
+            function getDifference() {
+                var numbers = getNumbers();
+                alert(numbers[0] - numbers[1] - numbers[2]);
+            }
+
+            function getProduct() {
+                var numbers = getNumbers();
+                alert(numbers[0] * numbers[1] * numbers[2]);
+            }
+
+            function getSquare() {
+                var number = getNumbers()[0];
+                alert(number * number);
+            }
+
+            function getCube() {
+                var number = getNumbers()[0];
+                alert(number * number * number);
+            }
+
+            function getQuotient() {
+                var numbers = getNumbers();
+                if (numbers[1] === 0 || numbers[2] === 0) {
+                    alert("Cannot divide by zero.");
+                    return;
+                }
+                alert(numbers[0] / numbers[1] / numbers[2]);
+            }
+        </script>
+        <form>
+            Enter first number: <input type="number" id="Number1" name="Number1"/><br/><br>
+            Enter second number: <input type="number" id="Number2" name="Number2"/><br/><br>
+            Enter third number: <input type="number" id="Number3" name="Number3"/><br/><br>
+            <input type="button" value="Get Sum" onclick="getSum()"/>
+            <input type="button" value="Subtract" onclick="getDifference()"/>
+            <input type="button" value="Multiply" onclick="getProduct()"/>
+            <input type="button" value="Square First Number" onclick="getSquare()"/>
+            <input type="button" value="Cube First Number" onclick="getCube()"/>
+            <input type="button" value="Divide" onclick="getQuotient()"/>
+        </form>
+    </body>
+</html>

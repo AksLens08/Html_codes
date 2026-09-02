@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercise for Document Objects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #fff;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .form-group {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        label {
+            font-weight: bold;
+            min-width: 150px;
+        }
+        
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .button-group {
+            margin: 15px 0;
+            display: flex;
+            gap: 10px;
+        }
+        
+        button {
+            padding: 8px 20px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .result-label {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .result-value {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .error {
+            color: red;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Exercise for Document Objects</h1>
+        
+        <div class="form-group">
+            <label for="age">Enter age :</label>
+            <input type="text" id="age" placeholder="">
+        </div>
+        
+        <div id="ageError" class="error"></div>
+        
+        <div class="form-group">
+            <label for="teaCups">Enter cups of tea :</label>
+            <input type="text" id="teaCups" placeholder="">
+        </div>
+        
+        <div id="teaError" class="error"></div>
+        
+        <div class="button-group">
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        
+        <div class="result-label">The amount of consumed :</div>
+        <div class="result-value" id="result"></div>
+    </div>
+
+    <script>
+        function calculate() {
+            // Get input values
+            var ageInput = document.getElementById("age").value;
+            var teaInput = document.getElementById("teaCups").value;
+            
+            // Clear previous errors
+            document.getElementById("ageError").innerHTML = "";
+            document.getElementById("teaError").innerHTML = "";
+            document.getElementById("result").innerHTML = "";
+            
+            // Validate inputs
+            var isValid = true;
+            
+            if (ageInput === "" || ageInput.trim() === "") {
+                document.getElementById("ageError").innerHTML = "Please fill up";
+                isValid = false;
+            }
+            
+            if (teaInput === "" || teaInput.trim() === "") {
+                document.getElementById("teaError").innerHTML = "Please fill up";
+                isValid = false;
+            }
+            
+            // If valid, perform calculation
+            if (isValid) {
+                var age = parseInt(ageInput);
+                var cups = parseInt(teaInput);
+                var result = age * cups * 100;
+                document.getElementById("result").innerHTML = result + "cups";
+            }
+        }
+        
+        function reset() {
+            // Clear all input fields
+            document.getElementById("age").value = "";
+            document.getElementById("teaCups").value = "";
+            
+            // Clear all messages and results
+            document.getElementById("ageError").innerHTML = "";
+            document.getElementById("teaError").innerHTML = "";
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

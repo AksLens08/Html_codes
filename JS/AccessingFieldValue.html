@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Accessing Field Value by Document Object Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function printvalue()
+            {
+                var name=document.frmName.attName.value;
+                alert("Welcome " +name)
+            }
+        </script>
+        <form name="frmName">
+            Enter name: <input type="text" name="attName"/><br/><br>
+            <input type="button" value="print name" onclick="printvalue()"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Methods 2</title>
+    <script type="text/javascript">
+        var colors = ['red', 'blue', 'green'];
+        document.write(colors[0] + "<br><br>");
+        document.write(colors.length + "<br><br>");
+        document.write(colors + "<br><br>");
+        colors[2] = 'black'; colors[3] = 'brown';
+        document.write(colors + "<br><br>");
+        colors[colors.length] = 'white';
+        colors[colors.length] = 'yellow';
+        document.write(colors + "<br><br>");
+        var join = colors.join("\tand\t");
+        document.write(join + "<br><br>");
+        document.write(colors + "<br><br>");
+        var concat = colors.concat('gray', 'pink', 'purple');
+        document.write(concat + "<br><br>");
+        document.write(colors + "<br><br>");
+        colors.unshift('Magenta');
+        document.write(colors + "<br>")
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

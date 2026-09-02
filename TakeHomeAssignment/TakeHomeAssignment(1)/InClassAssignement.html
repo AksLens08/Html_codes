@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 3</title>
+    <style>
+        body {
+            background-image: url('rose.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        ol {
+            list-style-type: lower-alpha;
+        }
+        ol ol {
+            list-style-type: circle;
+        }
+        ol ol ol {
+            list-style-type: upper-roman;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid #777;
+            padding: 5px 10px;
+        }
+        .header-cell {
+            background-color: pink;
+            color: white;
+            text-align: center;
+        }
+        .yellow-cell {
+            background-color: yellow;
+            color: black;
+        }
+        .cyan-cell {
+            background-color: cyan;
+            color: black;
+        }
+        .magenta-cell {
+            background-color: magenta;
+            color: white;
+        }
+        .gray-cell {
+            background-color: gray;
+            color: black;
+        }
+        .gold-cell {
+            background-color: gold;
+            color: black;
+        }
+        .media-container {
+            margin-top: 20px;
+        }
+        video, audio {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Safety Tips for Canoeists</h1>
+
+    <ol>
+        <li>Be able to swim</li>
+        <li>Wear a life jacket at all times
+            <ol>
+                <li>Hang on to the canoe
+                    <ol>
+                        <li>Be careful</li>
+                        <li>Do not look around</li>
+                    </ol>
+                </li>
+                <li>Swim to shore</li>
+            </ol>
+        </li>
+        <li>Don't overexert yourself</li>
+    </ol>
+
+    <table>
+        <tr>
+            <td colspan="2" class="header-cell">Songs & MP4</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="yellow-cell">Songs</td>
+            <td class="cyan-cell">15 Minutes</td>
+        </tr>
+        <tr>
+            <td class="magenta-cell">if we marriage</td>
+        </tr>
+        <tr>
+            <td class="gray-cell">Singers</td>
+            <td class="gold-cell">Way La, G Fatt</td>
+        </tr>
+    </table>
+
+    <div class="media-container">
+        <audio controls>
+            <source src="BackgroundSong.mp3" type="audio/mp3">
+        </audio>
+        
+        <video width="320" height="240" controls>
+            <source src="G Fatt.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>

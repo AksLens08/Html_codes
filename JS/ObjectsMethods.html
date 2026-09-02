@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Iteration</title>
+        <script type="text/javascript">
+            var ShweWarCat = { 
+                age: 18, 
+                furColor: 'grey',
+                meow: function() {
+                    document.write('meowww'+'<br><br>');
+                },
+                eat: function(food) {
+                    document.write('I love ' + food + " very much.<br><br>");
+                },
+                sleep: function(numMinutes) {
+                    for (var i = 0; i < numMinutes; i++) {
+                        document.write('z');
+                    }
+                }
+            };
+            ShweWarCat.meow();
+            ShweWarCat.eat('fish');
+            ShweWarCat.sleep(10);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>innerText Property Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function validate() {
+                var message;
+                if (document.myForm.userPass.value.length > 5) {
+                    message = "good";
+                } else {
+                    message = "poor";
+                }
+                document.getElementById("mylocation").innerText = message;
+            }
+        </script>
+        <form name="myForm">
+            <input type="password" name="userPass" onkeyup="validate()">
+            Strength: <span id="mylocation">no strength</span>
+        </form>
+    </body>
+</html>

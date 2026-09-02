@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Generate Background Color</title>
+    <style type="text/css">
+        #idH1Color {
+            height: 50px;
+            width: 600px;
+            padding: 20px;
+        }
+
+        .myButtonSytle img {
+            width: 150px;
+            height: 70px;
+        }
+    </style>
+    <script type="text/javascript">
+        function onGenerate() {
+            let red = Math.floor(Math.random() * 256);
+            let green = Math.floor(Math.random() * 256);
+            let blue = Math.floor(Math.random() * 256);
+            let color = "rgb(" + red + "," + green + "," + blue + ")";
+            document.getElementById("idH1Color").innerHTML = "Your Background Color "+ color;
+            3
+            document.getElementById("idH1Color").style.backgroundColor = color;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="idH1Color">YOUR BACKGROUND COLOR</h1>
+    <button class="myButtonSytle" onclick="onGenerate();">
+        <img src="grayCar.jpg" alt="Car Logo">
+    </button>
+</body>
+
+</html>

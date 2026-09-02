@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Window Object Example</title>
+<style type="text/css">
+.button {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 24pt;
+    text-shadow: 1px 1px 1px brown;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+    function GoEx1()
+    {
+        var r=window.confirm("Are you sure to go?");
+        if (r==true)
+        {
+            window.open("eg31.html");
+        }
+        else {alert("bye bye!");}
+    }
+    function GoEx2()
+    {
+        window.open("eg32.html");
+    }
+</script>
+<form>
+<input class="button" type="button" value="Go Exercise 1" onclick="GoEx1()">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="button" type="button" value="Go Exercise 2" onclick="GoEx2()">
+</form>
+</body>
+</html>

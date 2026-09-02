@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Generate Color
+        </title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function onGenerate()
+            {
+                let red=Math.floor(Math.random()*256);
+                let green=Math.floor(Math.random()*256);
+                let blue=Math.floor(Math.random()*256);
+                let color = "rgb("+red+","+green+","+blue+")";
+                document.getElementById("idH1Color").innerHTML = "Your Color"+color
+                document.getElementById("idH1Color").style.color = color;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="idH1Color">Your Color</h1>
+        <button onclick="onGenerate()">Generate Color</button>
+    </body>
+</html>

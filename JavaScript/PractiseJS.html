@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Alert Box</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var num1 = parseInt(prompt("Enter first number:"));
+            var num2 = parseInt(prompt("Enter second number:"));
+            var sum=num1+num2;
+            var multi=num1*num2;
+            var sub=num1-num2;
+            var div=num1/num2;
+            var result='num1= '+num1+'\nnum2= '+num2+'\nSum of two numbers is:' + sum + '\nSubtraction of two numbers is: ' + sub +'\nMultiplication of two numbers is: ' + multi+'\nDivision of two numbers is: '+div+'\n';
+            var showInPage='<b>'+'num1= '+num1+'<br><br>num2= '+num2+'<br><br>Sum of two numbers is:' + sum + '<br><br>Subtraction of two numbers is: ' + sub +'<br><br>Multiplication of two numbers is: ' + multi+'<br><br>Division of two numbers is: '+div+'<br><br>';
+            window.alert(result);
+            document.getElementById('show').innerHTML=showInPage;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3</title>
+    <script type="text/javascript">
+        var movie = {
+            title: "Mudras Calling",
+            duration: 90,
+            stars: ["Zen Khree", "Hla Yin Kyae", "Nann Wai Wai Htun"]
+        };
+
+        function printMovie(movie) {
+            console.log(movie.title + " lasts for " + movie.duration + " minutes");
+            console.log("It stars " + movie.stars.join(", "));
+            document.write(movie.title + " lasts for " + movie.duration + " minutes<br>");
+            document.write("It stars " + movie.stars.join(", ") + "<br>");
+        }
+
+        printMovie(movie);
+    </script>
+</head>
+<body>
+</body>
+</html>

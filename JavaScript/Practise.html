@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Your Name</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; }
+        h2 { color: #7b68ee; }
+        input { font-size: 20px; padding: 10px; }
+        button { font-size: 18px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+
+    <h2>Enter Your Name:</h2>
+    <input type="text" id="box" value="Aung Aung">
+    
+    <div>
+        <button onclick="alert('Hello ' + box.value)">Click Me</button>
+        <button onclick="box.value = ''">Clear</button>
+    </div>
+
+</body>
+</html>

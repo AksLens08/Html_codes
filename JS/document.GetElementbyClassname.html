@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document getElementsByClassName Method Example</title>
+        <style type="text/css">
+            .mystyle {
+                font-weight: bolder;
+                font-size: 24px;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="mystyle">Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p class="mystyle">Paragraph 4</p>
+        <script type="text/javascript">
+            function totalElements() {
+                var all = document.getElementsByClassName("mystyle").length;
+                alert("Total Paragraphs using mystyle class: " + all);
+            }
+        </script>
+        <form>
+            <input type="button" value="Total Paragraphs" onclick="totalElements()"/>
+        </form>
+    </body>
+</html>
