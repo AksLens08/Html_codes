@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Change Heading Style</title>
-    <style>
-        h1 {
-            width: 450px;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <title>Change Heading Style</title>
+            <style>
+            h1 
+                {
+                    width: 450px;
+                }
+            </style>
+    </head>
+    <body>
 
-    <h1 id="heading">JavaScript Lessons</h1>
+        <h1 id="heading">JavaScript Lessons</h1>
 
-    <button onclick="changeStyle()">Change Heading Style</button>
-    <button onclick="changeBg('blue')">Blue</button>
-    <button onclick="changeBg('yellow')">Yellow</button>
-    <button onclick="changeBg('orange')">Orange</button>
+        <button onclick="changeStyle()">Change Heading Style</button>
+        <button onclick="changeBg('blue')">Blue</button>
+        <button onclick="changeBg('yellow')">Yellow</button>
+        <button onclick="changeBg('orange')">Orange</button>
 
-    <script>
-        function changeStyle() {
-            let h = document.getElementById("heading");
-            h.style.fontFamily = "Arial, sans-serif";
-            h.style.color = "#c0392b";
-            h.style.textTransform = "uppercase";
-            h.style.letterSpacing = "2px";
-        }
+        <script>
+            function changeStyle() 
+            {
+                let h = document.getElementById("heading");
+                h.style.fontFamily = "Arial, sans-serif";
+                h.style.color = "#c0392b";
+                h.style.textTransform = "uppercase";
+                h.style.letterSpacing = "2px";
+            }
 
-        function changeBg(color) {
-            let h = document.getElementById("heading");
-            h.style.backgroundColor = color;
-        }
-    </script>
+            function changeBg(color) 
+            {
+                let h = document.getElementById("heading");
+                h.style.backgroundColor = color;
+            }
+        </script>
 
-</body>
+    </body>
 </html>
