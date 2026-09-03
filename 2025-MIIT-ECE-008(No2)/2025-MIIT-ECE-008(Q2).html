@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculations</title>
+    <link rel="stylesheet" href="2025-MIIT-ECE-008(No2).css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-box">Calculations</div>
+
+        <div class="input-group">
+            <label>Enter number1 :</label>
+            <input type="text" id="num1">
+        </div>
+
+        <div class="input-group">
+            <label>Enter number2 :</label>
+            <input type="text" id="num2">
+        </div>
+
+        <div class="button-group">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+        </div>
+
+        <div class="results">
+            Addition of the two number &nbsp;&nbsp;&nbsp;: <span id="addResult"></span><br>
+            Subtraction of the two number : <span id="subResult"></span><br>
+            Multiplication of the two number: <span id="mulResult"></span><br>
+            Division of the two number &nbsp;&nbsp;&nbsp;: <span id="divResult"></span>
+        </div>
+    </div>
+
+    <script>
+        function calculate(operator) {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+
+            if (operator === '+') {
+                document.getElementById("addResult").innerText = num1 + num2;
+            } else if (operator === '-') {
+                document.getElementById("subResult").innerText = num1 - num2;
+            } else if (operator === '*') {
+                document.getElementById("mulResult").innerText = num1 * num2;
+            } else if (operator === '/') {
+                document.getElementById("divResult").innerText = num1 / num2;
+            }
+        }
+    </script>
+
+</body>
+</html>
