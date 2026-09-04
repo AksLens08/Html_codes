@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IsFinite() Function Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function myFunction()
+            {
+                var a=isFinite(123)+"\n";
+                var b=isFinite(-1.23)+"\n";
+                var c=isFinite(5-2)+"\n";
+                var d=isFinite(0)+"\n";
+                var e=isFinite("123")+"\n";
+                var f=isFinite("Hello")+"\n";
+                var g=isFinite("2005/12/12")+"\n";
+                var res=a+b+c+d+e+f+g;
+                alert("Result is\n" +res);
+            }
+        </script>
+        <form name="myForm">
+        <input type="submit" value="Result" onClick="myFunction()">
+        </form>
+    </body>
+</html>

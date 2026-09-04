@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript eval() Example</title>
+</head>
+<body>
+<script type="text/javascript">
+    function myFunction(){
+        var x=10;
+        var y=20;
+        var a=eval("x*y");
+        var b=eval("2+2");
+        var c=eval("x+17");
+        var e=eval("Math.pow(4,3)");
+        var res=a+"\n"+b+"\n"+c+"\n"+e;
+        alert("Result\n" +res);
+    }
+</script>
+<form name="myForm">
+<input type="submit" value="Result" onclick="myFunction()">
+</form>
+</body>
+</html>

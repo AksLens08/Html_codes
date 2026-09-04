@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>isNaN() Function Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function myFunction(){
+                var res="";
+                res=res+isNaN(123) + ":123 " +"\n";
+                res=res+isNaN(-1.23)+":-1.23 "+"\n";
+                res=res+isNaN(5-2)+":5-2 "+"\n";
+                res=res+isNaN('123N(0)'+ ":0 ")+ "123N(0) +:0 "+"\n";
+                res=res+isNaN('Hello')+ ": 'Hello' "+"\n";
+                alert("Result is " +res);
+            }
+        </script>
+        <form name="myForm">
+        <input type="submit" value="Result" onClick="myFunction()">
+        </form>
+    </body>
+</html>
